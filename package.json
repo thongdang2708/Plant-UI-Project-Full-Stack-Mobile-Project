@@ -1,0 +1,11 @@
+{
+  "name": "plantstore",
+  "version": "1.0.0",
+  "description": "plantui",
+  "main": "index.js",
+  "scripts": {
+    "server": "mvn clean spring-boot:run"
+  },
+  "author": "Thong Dang",
+  "license": "MIT"
+}
