@@ -30,7 +30,11 @@ To start a backend folder, run: mvn clean spring-boot:run
 
 To start a frontend folder, run: expo start --android or expo start --ios
 
-need to cd frontend folder and run npm install.
+Need to cd frontend folder and run npm install.
+
+Please download a React Native Debugger through a link: 
+
+https://github.com/jhen0409/react-native-debugger
 
 React Native deployed at: https://expo.dev/@thongdang/frontend?serviceType=classic&distribution=expo-go
 
