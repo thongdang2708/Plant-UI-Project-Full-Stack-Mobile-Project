@@ -18,6 +18,10 @@ Git ignore in backend folder to keep AWS information secret in application.prope
 
 Link API hosted by AWS with the link by Elastic Beantalk: http://springbootplantui-env.eba-ig38papg.us-east-1.elasticbeanstalk.com 
 
+Images file in the project is stored in S3 Bucket AWS:
+
+<img width="1436" alt="image" src="https://user-images.githubusercontent.com/89829761/215286206-ecd4552f-7d2e-4641-9835-e020240ea8ea.png">
+
 Postman testing: 
 
 <img width="275" alt="image" src="https://user-images.githubusercontent.com/89829761/215286085-5b62ac68-81c2-4ed3-b514-4f775611d40c.png">
