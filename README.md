@@ -30,4 +30,6 @@ To start a backend folder, run: mvn clean spring-boot:run
 
 To start a frontend folder, run: expo start --android or expo start --ios
 
+React Native deployed at: https://expo.dev/@thongdang/frontend?serviceType=classic&distribution=expo-go
+
 
