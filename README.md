@@ -1,6 +1,6 @@
 # Plant-UI-Project-Full-Stack-Mobile-Project
 
-As costs for Amazon Cloud Services are too high, I have to delete all services on Amazon.
+Warning: As costs for Amazon Cloud Services are too high, I have to delete all services on Amazon.
 
 Mobile outline:
 
@@ -14,6 +14,7 @@ Mobile outline:
 
 ![image](https://user-images.githubusercontent.com/89829761/215285943-2968022e-b8de-4b8d-ad44-6642ae91cdd1.png)
 
+Warning: As costs for Amazon Cloud Services are too high, I have to delete all services on Amazon.
 
 Database MySQL is deployed to AWS via ![image](https://user-images.githubusercontent.com/89829761/215286008-6ec51ec5-7ad0-4647-811c-5f629690642e.png)
 
