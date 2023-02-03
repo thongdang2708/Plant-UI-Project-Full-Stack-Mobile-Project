@@ -27,7 +27,7 @@ Images file in the project is stored in S3 Bucket AWS:
 
 <img width="1436" alt="image" src="https://user-images.githubusercontent.com/89829761/215286206-ecd4552f-7d2e-4641-9835-e020240ea8ea.png">
 
-SOLVE FOR AWS: 
+SOLVE FOR AWS for back-end sides: 
 
 I used Railway to host my Spring Boot Apis (it is free for 500 hours per month, therefore, in some days in the month, my app is crashed and can only be accessed by own localhost of individuals)
 
