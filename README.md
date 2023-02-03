@@ -1,5 +1,7 @@
 # Plant-UI-Project-Full-Stack-Mobile-Project
 
+As costs for Amazon Cloud Services are too high, I have to delete all services on Amazon.
+
 Mobile outline:
 
 ![image](https://user-images.githubusercontent.com/89829761/215285937-a9d5652e-162a-4743-a383-4b1654a62532.png)
@@ -11,6 +13,7 @@ Mobile outline:
 ![image](https://user-images.githubusercontent.com/89829761/215285979-26bd5832-8b1b-4585-8f07-925da5fc2e06.png)
 
 ![image](https://user-images.githubusercontent.com/89829761/215285943-2968022e-b8de-4b8d-ad44-6642ae91cdd1.png)
+
 
 Database MySQL is deployed to AWS via ![image](https://user-images.githubusercontent.com/89829761/215286008-6ec51ec5-7ad0-4647-811c-5f629690642e.png)
 
@@ -36,6 +39,6 @@ Please download a React Native Debugger through a link:
 
 https://github.com/jhen0409/react-native-debugger
 
-React Native deployed at: https://expo.dev/@thongdang/frontend?serviceType=classic&distribution=expo-go
+
 
 
