@@ -1,6 +1,7 @@
 # Plant-UI-Project-Full-Stack-Mobile-Project
 
-Warning: As costs for Amazon Cloud Services are too high, I have to delete all services on Amazon.
+Warning!
+As costs for Amazon Cloud Services are too high for Free Tier package for user and my app went over free services (238 euros charge for me in January :((((( ), I have to delete all services on Amazon.
 
 Mobile outline:
 
@@ -26,6 +27,16 @@ Images file in the project is stored in S3 Bucket AWS:
 
 <img width="1436" alt="image" src="https://user-images.githubusercontent.com/89829761/215286206-ecd4552f-7d2e-4641-9835-e020240ea8ea.png">
 
+SOLVE FOR AWS: 
+
+I used Railway to host my Spring Boot Apis (it is free for 500 hours per month, therefore, in some days in the month, my app is crashed and can only be accessed by own localhost of individuals)
+
+<img width="1781" alt="image" src="https://user-images.githubusercontent.com/89829761/216654443-2a0f8d51-f4ea-46b0-a60d-4a752b551de9.png">
+
+API host url: 
+
+https://backend-for-plant-ui-production.up.railway.app
+
 Postman testing: 
 
 <img width="275" alt="image" src="https://user-images.githubusercontent.com/89829761/215286085-5b62ac68-81c2-4ed3-b514-4f775611d40c.png">
@@ -39,6 +50,8 @@ Need to cd frontend folder and run npm install.
 Please download a React Native Debugger through a link: 
 
 https://github.com/jhen0409/react-native-debugger
+
+
 
 
 
