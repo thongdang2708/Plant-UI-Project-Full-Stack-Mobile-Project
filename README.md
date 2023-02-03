@@ -51,7 +51,7 @@ Please download a React Native Debugger through a link:
 
 https://github.com/jhen0409/react-native-debugger
 
-
+Link deploy (maybe crashed in some days due to limit of back-end sides deployment to Railway): https://expo.dev/@thongdang/frontend?serviceType=classic&distribution=expo-go 
 
 
 
