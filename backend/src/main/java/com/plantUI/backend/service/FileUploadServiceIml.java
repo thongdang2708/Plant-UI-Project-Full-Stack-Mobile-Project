@@ -38,9 +38,6 @@ public class FileUploadServiceIml implements FileUploadService {
 
     private final String bucketName = "elasticbeanstalk-us-east-1-235158775596";
 
-    @Autowired
-    private AmazonS3 s3client;
-
     public boolean isImageFile(MultipartFile file) {
 
         String fileExtension = FilenameUtils.getExtension(file.getOriginalFilename());
@@ -86,17 +83,8 @@ public class FileUploadServiceIml implements FileUploadService {
                 throw new UploadFileFailException("Cannot upload file outside current directory!");
             }
 
-            // try (InputStream inputStream = file.getInputStream()) {
-            // Files.copy(file.getInputStream(), destinationFilePath,
-            // StandardCopyOption.REPLACE_EXISTING);
+            Files.copy(file.getInputStream(), destinationFilePath, StandardCopyOption.REPLACE_EXISTING);
 
-            ObjectMetadata objectMetadata = new ObjectMetadata();
-            objectMetadata.setContentType(file.getContentType());
-            objectMetadata.setContentLength(file.getSize());
-            s3client.putObject(
-                    new PutObjectRequest(bucketName, generatedFileName, file.getInputStream(), objectMetadata));
-
-            // }
             setTextForUrlImageForPlant(plant, generatedFileName);
 
             return generatedFileName;
@@ -128,20 +116,21 @@ public class FileUploadServiceIml implements FileUploadService {
         }
     }
 
-    public InputStream getImage(String nameOfBucket, String imageName) {
-
-        S3Object s3Object = s3client.getObject(nameOfBucket, imageName);
-
-        return s3Object.getObjectContent();
-    }
-
     @Override
     public byte[] readFileContent(String fileName) {
 
         try {
 
-            InputStream in = getImage(bucketName, fileName);
-            return IOUtils.toByteArray(in);
+            Path path = this.storageFolder.resolve(fileName);
+            UrlResource urlResource = new UrlResource(path.toUri());
+
+            if (urlResource.exists() || urlResource.isReadable()) {
+                byte[] bytes = StreamUtils.copyToByteArray(urlResource.getInputStream());
+                return bytes;
+            } else {
+                throw new UploadFileFailException("Cannot read this file!");
+            }
+
             // Path path = this.storageFolder.resolve(fileName);
             // UrlResource resource = new UrlResource(path.toUri());
 
