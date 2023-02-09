@@ -17,11 +17,15 @@ Mobile outline:
 
 Warning: As costs for Amazon Cloud Services are too high, I have to delete all services on Amazon.
 
+```bash
 Database MySQL is deployed to AWS via ![image](https://user-images.githubusercontent.com/89829761/215286008-6ec51ec5-7ad0-4647-811c-5f629690642e.png)
+```
 
 Git ignore in backend folder to keep AWS information secret in application.properties && *.yaml files.
 
+```bash
 Link API hosted by AWS with the link by Elastic Beantalk: http://springbootplantui-env.eba-ig38papg.us-east-1.elasticbeanstalk.com 
+```
 
 Images file in the project is stored in S3 Bucket AWS:
 
@@ -35,24 +39,49 @@ I used Railway to host my Spring Boot Apis (it is free for 500 hours per month, 
 
 API host url: 
 
+```bash
 https://backend-for-plant-ui-production.up.railway.app
+```
 
 Postman testing: 
 
 <img width="275" alt="image" src="https://user-images.githubusercontent.com/89829761/215286085-5b62ac68-81c2-4ed3-b514-4f775611d40c.png">
 
+```bash
 To start a backend folder, run: mvn clean spring-boot:run 
+```
 
+```bash
+Need to cd frontend folder and run npm install beforehand.
+```
+
+```bash
 To start a frontend folder, run: expo start --android or expo start --ios
+```
 
-Need to cd frontend folder and run npm install.
+
 
 Please download a React Native Debugger through a link: 
-
+```bash
 https://github.com/jhen0409/react-native-debugger
+```
 
-Link deploy (maybe crashed in some days due to limit of back-end sides deployment to Railway): https://expo.dev/@thongdang/frontend?serviceType=classic&distribution=expo-go 
+Link deploy (maybe crashed in some days due to limit of back-end sides deployment to Railway): 
+```bash
+https://expo.dev/@thongdang/frontend?serviceType=classic&distribution=expo-go 
+```
 
 
 
+
+
+
+
+## Badges
+
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
