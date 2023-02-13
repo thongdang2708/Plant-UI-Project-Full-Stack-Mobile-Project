@@ -3,7 +3,7 @@ import {View, Text, ImageBackground, StyleSheet, Dimensions} from "react-native"
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { PlantObject } from '../store/reducers/PlantReducer';
 import { useState } from 'react';
-import { WEB_API_URL } from '@env';
+
 import { MotiView } from 'moti';
 import axios from 'axios';
 import { RootParamList } from '../App';
@@ -19,6 +19,7 @@ interface PlantObjectWithUpdateStatus extends PlantObject {
     updateStatus: React.Dispatch<React.SetStateAction<boolean>>
 }
 
+const WEB_API_URL="https://backend-for-plant-ui-production.up.railway.app"
 
 function SingleHighRecommendPlant(item : PlantObjectWithUpdateStatus) {
 

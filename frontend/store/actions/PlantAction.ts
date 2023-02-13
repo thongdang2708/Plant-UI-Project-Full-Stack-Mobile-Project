@@ -1,11 +1,12 @@
 
-import { WEB_API_URL } from "@env";
+
 import { Dispatch } from "redux";
 import { ThunkAction, ThunkDispatch } from "redux-thunk";
 import axios from "axios";
 import { Action, PlantObject } from "../reducers/PlantReducer";
 import { ProductsInOrder } from "../reducers/OrderReducer";
 
+const WEB_API_URL="https://backend-for-plant-ui-production.up.railway.app";
 
 //Update plant array after adding products to order
 export const updatePlantsAfterSavingOrder = (array: ProductsInOrder[]) => async (dispatch: Dispatch<Action>, getState : any) => {

@@ -1,7 +1,7 @@
 
 import axios from "axios";
 import { Dispatch } from "redux";
-import { WEB_API_URL } from "@env";
+
 import { OrderObject } from "../reducers/OrderReducer";
 import { PlantObject } from "../reducers/PlantReducer";
 import { Action } from "../reducers/OrderReducer";
@@ -17,6 +17,7 @@ interface ResponseOrder {
     orderDate: string
 }
 
+const WEB_API_URL="https://backend-for-plant-ui-production.up.railway.app"
 //Add Order
 
 export const addProductsToOrder = (order: Order) => async (dispatch: Dispatch<Action>, getState: any) => {

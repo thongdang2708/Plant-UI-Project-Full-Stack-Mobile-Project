@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
         marginVertical: 10
     },
     bodyCart: {
-        marginVertical: 20
+        marginBottom: 80
     },
     header: {
         marginVertical: 10,

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from "react-native";
 import { PlantObject } from '../store/reducers/PlantReducer';
-import { WEB_API_URL } from '@env';
+
 import { MotiView } from 'moti';
 import {Ionicons} from "@expo/vector-icons";
 import { useState } from 'react';
@@ -14,6 +14,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootParamList } from '../App';
 import { DrawerNavigationProp } from '@react-navigation/drawer';
 
+const WEB_API_URL="https://backend-for-plant-ui-production.up.railway.app"
 
 interface PlantObjectWithUpdateStatus extends PlantObject {
     updateStatus: React.Dispatch<React.SetStateAction<boolean>>

@@ -9,10 +9,12 @@ import { ProductsInOrder } from '../store/reducers/OrderReducer';
 import { FlatList } from 'react-native-gesture-handler';
 import {Ionicons} from "@expo/vector-icons";
 import { deleteOrder } from '../store/actions/OrderAction';
-import { WEB_API_URL } from '@env';
+
 import { updatePlantsAfterRemovingOrder } from '../store/actions/PlantAction';
 import { useState } from 'react';
 import axios from 'axios';
+
+const WEB_API_URL="https://backend-for-plant-ui-production.up.railway.app"
 
 function SinglePlantsInSavedOrder({id, orderDate} : OrderObject) {
 

@@ -14,7 +14,7 @@ import {Ionicons} from "@expo/vector-icons";
 import { colors } from '../constants/colors';
 import { useNavigation } from '@react-navigation/native';
 import { Image } from 'react-native';
-import { WEB_API_URL } from '@env';
+
 import { useState } from 'react';
 import { updateTemporaryQuantity } from '../store/actions/PlantAction';
 import { color } from 'react-native-reanimated';
@@ -22,6 +22,7 @@ import { getAllPlants } from '../store/actions/PlantAction';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { updateItemsInCart } from '../store/actions/ItemsInCartAction';
 
+const WEB_API_URL="https://backend-for-plant-ui-production.up.railway.app"
 
 export interface ItemInCart {
   id: number,
@@ -199,7 +200,7 @@ function SinglePlantPage ({navigation, route} : any) {
     setTimeout(async () => {
       setAddToCart(false);
     
-    }, 5000);
+    }, 2000);
 
   };  
 
