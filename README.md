@@ -71,10 +71,17 @@ Link deploy (maybe crashed in some days due to limit of back-end sides deploymen
 https://expo.dev/@thongdang/frontend?serviceType=classic&distribution=expo-go 
 ```
 
+Plant data can be found at:
 
+```bash
+/data.json
+```
 
+Plant images can be found at:
 
-
+```bash
+/images/
+```
 
 
 ## Badges
