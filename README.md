@@ -18,8 +18,9 @@ Mobile outline:
 Warning: As costs for Amazon Cloud Services are too high, I have to delete all services on Amazon.
 
 ```bash
-Database MySQL is deployed to AWS via ![image](https://user-images.githubusercontent.com/89829761/215286008-6ec51ec5-7ad0-4647-811c-5f629690642e.png)
+Database MySQL is deployed to AWS via as below
 ```
+![image](https://user-images.githubusercontent.com/89829761/215286008-6ec51ec5-7ad0-4647-811c-5f629690642e.png)
 
 Git ignore in backend folder to keep AWS information secret in application.properties && *.yaml files.
 
